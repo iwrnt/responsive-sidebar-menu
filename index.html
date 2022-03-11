@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <nav class="sidebar">
+        <header class="image-text">
+            <span class="image">
+                <img src="logo.png" alt="logo">
+            </span>
+
+            <div class="text header-text">
+                <span class="name">iwrnt</span>
+                <span class="profession">Software Engineer</span>
+            </div>
+
+            <div id="sidebar-toggle">
+                <i class="material-icons">chevron_right</i>
+            </div>
+        </header>
+
+        <ul class="menu-list">
+            <li class="item search">
+                <div>
+                    <i class="material-icons">search</i>
+                    <input type="text" class="text" placeholder="Search..." />
+                </div>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <i class="material-icons">home</i>
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <i class="material-icons">money</i>
+                    <span class="text">Revenue</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <i class="material-icons">notifications</i>
+                    <span class="text">Notifications</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <i class="material-icons">analytics</i>
+                    <span class="text">Analytics</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <i class="material-icons">thumb_up</i>
+                    <span class="text">Likes</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#">
+                    <i class="material-icons">account_balance_wallet</i>
+                    <span class="text">Wallets</span>
+                </a>
+            </li>
+        </ul>
+
+        <footer>
+            <div class="item">
+                <a href="#">
+                    <i class="material-icons">logout</i>
+                    <span class="text">Logout</span>
+                </a>
+            </div>
+            <div class="item" id="mode-switch">
+                <div>
+                    <i class="material-icons moon">brightness_2</i>
+                    <i class="material-icons sun">brightness_5</i>
+                    <span class="text" id="mode-switch-text">Dark Mode</span>
+                    <i class="toggle-btn"></i>
+                </div>
+            </div>
+        </footer>
+    </nav>
+
+    <section class="content">
+        <a href="https://www.flaticon.com/free-icons/letter-i" title="letter i icons">Letter i icons created by Freepik - Flaticon</a>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
